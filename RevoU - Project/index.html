@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RevoU Mini Project</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <nav>
+        <div class="logo">
+            <img src="" alt=""> </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="our_profile.html">Our Profile</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#message">Message Us</a>
+        </div>
+    </nav>
+
+    <hr>
+
+    <header>
+        <h1 id="welcome-text">Hi <span id="user-name">Guest</span>, Welcome To Wellmart</h1>
+        <p></p>
+        <div class="banner">
+            <img src="https://img.freepik.com/premium-psd/smart-mobile-promotional-banner-design-template_987701-2646.jpg" alt="Banner Image" width="100%">
+        </div>
+    </header>
+
+    <hr>
+
+    <section class="headquarter">
+        <h2>Our Headquarter</h2>
+        <div class="location-container">
+            <div class="location">
+                <div class="circle"></div>
+                <p>Jakarta</p>
+            </div>
+            <div class="location">
+                <div class="circle"></div>
+                <p>Bandung</p>
+            </div>
+            <div class="location">
+                <div class="circle"></div>
+                <p>Surabaya</p>
+            </div>
+        </div>
+    </section>
+
+    <hr>
+
+    <section id="message" class="message-us">
+        <h2>Message Us</h2>
+        <div class="content-wrapper">
+            <form id="message-form">
+                <table>
+                    <tr>
+                        <td>Nama</td>
+                        <td> <input type="text" id="input-name" placeholder="Nama" required></td>
+                    </tr>
+                    <tr>
+                        <td>Tanggal Lahir</td>
+                        <td> <input type="date" id="input-birthdate" required></td>
+                    </tr>
+                    <tr>
+                        <td>Jenis Kelamin</td>
+                        <td>
+                            <input type="radio" name="gender" value="Laki-Laki" id="male" checked> Laki-Laki
+                            <input type="radio" name="gender" value="Perempuan" id="female"> Perempuan
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>Pesan</td>
+                        <td> <textarea id="input-message" placeholder="Pesan" rows="4"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2">
+                            <button type="button" onclick="submitForm()">Submit</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+
+            <div class="result-box" id="result-box">
+                <p><strong>Current time :</strong> <span id="current-time">-</span></p>
+                <br>
+                <p><strong>Nama :</strong> <span id="res-name">-</span></p>
+                <p><strong>Tanggal Lahir :</strong> <span id="res-birthdate">-</span></p>
+                <p><strong>Jenis Kelamin :</strong> <span id="res-gender">-</span></p>
+                <p><strong>Pesan :</strong> <span id="res-message">-</span></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>Created By Rasya</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
